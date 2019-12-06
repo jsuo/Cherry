@@ -403,7 +403,7 @@
 				TargetAttributes = {
 					8E84489B1A9AB16C000A549F = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = Y54H2D8RT6;
+						DevelopmentTeam = 6C2TZ5BU5J;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -412,11 +412,12 @@
 					};
 					8E8448B01A9AB16C000A549F = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 6C2TZ5BU5J;
 						TestTargetID = 8E84489B1A9AB16C000A549F;
 					};
 					8E8448C41A9AB239000A549F = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = Y54H2D8RT6;
+						DevelopmentTeam = 6C2TZ5BU5J;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -425,6 +426,7 @@
 					};
 					8E8448D31A9AB239000A549F = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 6C2TZ5BU5J;
 					};
 				};
 			};
@@ -687,9 +689,10 @@
 				CODE_SIGN_ENTITLEMENTS = Cherry/Cherry.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6C2TZ5BU5J;
 				INFOPLIST_FILE = Cherry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.corgitoergosum.Cherry;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.ghsystems.Cherry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
@@ -704,9 +707,10 @@
 				CODE_SIGN_ENTITLEMENTS = Cherry/Cherry.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6C2TZ5BU5J;
 				INFOPLIST_FILE = Cherry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.corgitoergosum.Cherry;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.ghsystems.Cherry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
@@ -717,6 +721,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6C2TZ5BU5J;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -737,6 +743,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6C2TZ5BU5J;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -754,13 +762,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6C2TZ5BU5J;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				IBSC_MODULE = Cherry_WatchKit_Extension;
 				INFOPLIST_FILE = "Cherry WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.corgitoergosum.Cherry.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.ghsystems.Cherry.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -774,9 +783,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6C2TZ5BU5J;
 				IBSC_MODULE = Cherry_WatchKit_Extension;
 				INFOPLIST_FILE = "Cherry WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.corgitoergosum.Cherry.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.ghsystems.Cherry.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -791,13 +801,14 @@
 				CODE_SIGN_ENTITLEMENTS = "Cherry WatchKit Extension/Cherry WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6C2TZ5BU5J;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Cherry WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.corgitoergosum.Cherry.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.ghsystems.Cherry.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -814,9 +825,10 @@
 				CODE_SIGN_ENTITLEMENTS = "Cherry WatchKit Extension/Cherry WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6C2TZ5BU5J;
 				INFOPLIST_FILE = "Cherry WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.corgitoergosum.Cherry.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.ghsystems.Cherry.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
