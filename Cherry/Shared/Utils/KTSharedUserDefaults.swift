@@ -11,25 +11,25 @@ import Foundation
 class KTSharedUserDefaults {
 
 
-    class var sharedUserDefaults: NSUserDefaults {
+    class var sharedUserDefaults: UserDefaults {
         struct Static {
-            static let appGroupInstance = NSUserDefaults(suiteName:"group.biz.ghsystems.Cherry")!
-            static let standardUserDefaults = NSUserDefaults.standardUserDefaults()
+            static let appGroupInstance = UserDefaults(suiteName:"group.biz.ghsystems.Cherry")!
+            static let standardUserDefaults = UserDefaults.standard
             static let shouldUseAppGroupsForStorage = true
         }
         return Static.shouldUseAppGroupsForStorage ? Static.appGroupInstance : Static.standardUserDefaults
     }
 
     class var pomoDuration: Int {
-        return (KTSharedUserDefaults.sharedUserDefaults.integerForKey("pomo_length")>0) ? KTSharedUserDefaults.sharedUserDefaults.integerForKey("pomo_length") : 25
+        return (KTSharedUserDefaults.sharedUserDefaults.integer(forKey: "pomo_length")>0) ? KTSharedUserDefaults.sharedUserDefaults.integer(forKey: "pomo_length") : 25
     }
 
     class var breakDuration: Int {
-        return (KTSharedUserDefaults.sharedUserDefaults.integerForKey("break_length")>0) ? KTSharedUserDefaults.sharedUserDefaults.integerForKey("break_length") : 25
+        return (KTSharedUserDefaults.sharedUserDefaults.integer(forKey: "break_length")>0) ? KTSharedUserDefaults.sharedUserDefaults.integer(forKey: "break_length") : 25
     }
 
     class var shouldAutoDeleteCompletedActivites: Bool {
-        return KTSharedUserDefaults.sharedUserDefaults.boolForKey("delete_completed_activities") ? KTSharedUserDefaults.sharedUserDefaults.boolForKey("delete_completed_activities") : true
+        return KTSharedUserDefaults.sharedUserDefaults.bool(forKey: "delete_completed_activities") ? KTSharedUserDefaults.sharedUserDefaults.bool(forKey: "delete_completed_activities") : true
     }
 
 }
