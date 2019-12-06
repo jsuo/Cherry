@@ -13,7 +13,7 @@ import CoreData
 public class KTCoreDataStack {
 
     private struct KTCoreDataStackConstants {
-        static let appGroupID = "group.com.corgitoergosum.KTPomodoro"
+        static let appGroupID = "group.biz.ghsystems.Cherry"
         static let shouldUseAppGroupsForStorage = false
     }
 
