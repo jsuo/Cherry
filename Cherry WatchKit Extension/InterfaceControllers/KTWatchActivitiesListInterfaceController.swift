@@ -26,7 +26,7 @@ class KTWatchActivitiesListInterfaceController: WKInterfaceController {
     override func handleUserActivity(userInfo: [NSObject : AnyObject]!) {
         if let userInfo = userInfo {
             if let activityType = userInfo["type"] as? String{
-                if (activityType == "com.corgitoergosum.KTPomodoro.select_activity") {
+                if (activityType == "biz.ghsystems.Cherry.select_activity") {
                     self.handleUserActivitySelectActivity(userInfo)
                 }
             }

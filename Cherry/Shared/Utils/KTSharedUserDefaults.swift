@@ -15,7 +15,7 @@ class KTSharedUserDefaults {
         struct Static {
             static let appGroupInstance = NSUserDefaults(suiteName:"group.biz.ghsystems.Cherry")!
             static let standardUserDefaults = NSUserDefaults.standardUserDefaults()
-            static let shouldUseAppGroupsForStorage = false
+            static let shouldUseAppGroupsForStorage = true
         }
         return Static.shouldUseAppGroupsForStorage ? Static.appGroupInstance : Static.standardUserDefaults
     }
